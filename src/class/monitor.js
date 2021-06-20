@@ -50,9 +50,9 @@ class Monitor extends events {
         this.initMonitor();
     }
 
-//     randomProxy = () => {
-//         return null;
-//     }
+    randomProxy = () => {
+        return null;
+    }
 
     initMonitor = async () => {
         let response;
