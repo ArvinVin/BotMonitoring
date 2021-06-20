@@ -50,9 +50,9 @@ class Monitor extends events {
         this.initMonitor();
     }
 
-    randomProxy = () => {
-        return null;
-    }
+//     randomProxy = () => {
+//         return null;
+//     }
 
     initMonitor = async () => {
         let response;
@@ -62,7 +62,7 @@ class Monitor extends events {
                 url: this.site + '/products.json',
                 json: true,
                 followRedirect: true,
-                proxy: this.randomProxy(),
+                proxy: null,
                 qs: {
                     limit: getRandomArbitrary(250, 9999)
                 }
@@ -90,7 +90,7 @@ class Monitor extends events {
                 url: this.site + '/products.json',
                 json: true,
                 followRedirect: true,
-                proxy: this.randomProxy(),
+                proxy: null,
                 qs: {
                     limit: getRandomArbitrary(250, 9999)
                 }
