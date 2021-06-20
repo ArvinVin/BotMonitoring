@@ -51,7 +51,7 @@ class Monitor extends events {
     }
 
     randomProxy = () => {
-        return formatProxy(this.proxies[Math.floor(Math.random() * this.proxies.length)]);
+        return null;
     }
 
     initMonitor = async () => {
